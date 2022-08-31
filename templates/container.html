@@ -1,0 +1,38 @@
+<!Doctype html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8">
+		{% load staticfiles %}
+		<link href="{% static 'css/index.css' %}" rel="stylesheet" type="text/css">
+		<link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" type="text/css">
+		<link href="{% static 'css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+		<link rel="icon" href="{% static 'images/key.jpg' %}" type="image/x-icon">
+		<script src="{% static 'ajax/libs/jquery/3.1.1/jquery.min.js' %}"></script>
+		<script src="{% static 'js/vendor/bootstrap.min.js' %}"></script>
+		<script src="{% static 'js/plugins.js' %}"></script>
+		{% block title %}{% endblock %}
+	</head>
+	<body class="container-fluid backimage">
+		<div class='row'>
+			<div class='col-xs-12 col-lg-offset-3 col-lg-6'>
+				<div id="home">
+					<img id="img" src="{% static 'images/key.jpg' %}" width="50" height="50" class="img-responsive img-circle">
+					<h2 class="h2" id="tit">&nbsp&nbsp<a href="/">SAFE HAVEN</a></h2>
+					<div class="row">
+						{% block body %}
+						
+						{% endblock %}
+					</div>
+				</div>
+			</div>
+		</div>
+		{% block modal %}
+						
+		{% endblock %}
+	</body>
+{% block script %}
+
+{% endblock %}
+
+</html>

@@ -1,0 +1,39 @@
+body{
+font-family: Times New Roman;
+}
+
+#home{
+padding:20px 20px 20px 20px;
+opacity:0.55;
+background-color:#FFFFFF;
+border-radius:25px;
+margin: 20% auto 0;
+}
+
+.backimage{
+background-image:url("/static/images/lock.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+}
+
+#container{
+height:100%;
+}
+
+#tit{
+font-family:Georgia, Times New Roman, Times, "serif";
+color:#0099FF;
+margin-bottom: 40px;
+}
+
+#img{
+float:left;
+display:inline
+}
+
+#passwords{
+	max-height:75%;
+	overflow-y:auto;
+}
+
